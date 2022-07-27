@@ -1,5 +1,5 @@
 {% set name = "ci-info" %}
-{% set version = "0.2.0" %}
+{% set version = "0.3.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,12 +7,12 @@ package:
 
 source:
   url: https://github.com/mgxd/ci-info/archive/{{ version }}.tar.gz
-  sha256: fa4e0bb63514dfee49fb4709fd84d29b12836f6d0c9506982a4b6f2219fa3232
+  sha256: 92a10ecca1bbee479bac86cd72c2922d6ff1aa015e40b52246bcf9972a411ff3
 
 build:
   noarch: python
   number: 0
-  script: "{{ PYTHON }} -m pip install . -vv"
+  script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   host:
@@ -31,7 +31,7 @@ about:
   license: MIT
   license_family: MIT
   license_file: LICENSE
-  summary: 'Get details about the current Continuous Integration environment.'
+  summary: Get details about the current Continuous Integration environment.
 
   # doc_url: 
   dev_url: https://github.com/mgxd/ci-info
