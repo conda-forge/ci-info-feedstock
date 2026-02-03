@@ -1,5 +1,5 @@
 {% set name = "ci-info" %}
-{% set version = "0.3.0" %}
+{% set version = "0.4.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,11 +7,11 @@ package:
 
 source:
   url: https://github.com/mgxd/ci-info/archive/{{ version }}.tar.gz
-  sha256: 92a10ecca1bbee479bac86cd72c2922d6ff1aa015e40b52246bcf9972a411ff3
+  sha256: 7d112cfd38b7e80ba1fe4e9e494dd6d2c482ac4fc3aa93c1f931ab455f324284
 
 build:
   noarch: python
-  number: 1
+  number: 0
   script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
