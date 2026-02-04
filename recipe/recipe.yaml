@@ -30,7 +30,6 @@ tests:
   - python:
       imports:
         - ci_info
-        - ci_info.tests
       python_version: ${{ python_min }}.*
 about:
   license: MIT
