@@ -9,8 +9,8 @@ package:
   version: ${{ version }}
 
 source:
-  url: https://github.com/mgxd/ci-info/archive/${{ version }}.tar.gz
-  sha256: 92a10ecca1bbee479bac86cd72c2922d6ff1aa015e40b52246bcf9972a411ff3
+  url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/${{ name }}-${{ version }}.tar.gz
+  sha256: 1fd50cbd401f29adffeeb18b0489e232d16ac1a7458ac6bc316deab6ae535fb0
 
 build:
   number: 2
